@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "total_rows": 24,
+  "completed_rows": 24,
+  "failed_rows": 0,
+  "active": null,
+  "failures": [],
+  "output_dir": "C:\\Users\\zrway\\Desktop\\论文-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\reports\\formal_ablation_dynamic_eval_20260430",
+  "updated_at": "2026-05-01 03:40:01"
+}

@@ -1,0 +1,2 @@
+checkpoint_episode,reward_mean,reward_std,p2p_mean,p2p_std,grid_buy_mean,grid_buy_std,grid_sell_mean,grid_sell_std,carbon_mean,carbon_std
+1000,74.35410905169627,0.0,0.12432530776407749,0.0,2.6808256215653943,0.0,0.16489310038357707,0.0,1.99997873754,0.0

@@ -1,0 +1,3 @@
+seed42=runs\full_multiseed5000_tuned_seed42_20260415\models\transformer_5000.pt
+seed43=runs\full_multiseed5000_tuned_seed43_20260415\models\transformer_5000.pt
+seed44=runs\full_multiseed5000_tuned_seed44_20260415\models\transformer_5000.pt

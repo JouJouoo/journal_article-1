@@ -1,0 +1,3 @@
+﻿active_agent_count,reward_mean,reward_std,p2p_mean,p2p_std,grid_buy_mean,grid_buy_std,grid_sell_mean,grid_sell_std,carbon_mean,carbon_std,n_agents_mean,n_agents_std
+1,54.31429373969634,0.0,0.0,0.0,3.1450760680294705,0.0,1.024735677976241,0.0,2.286995988990889,0.0,1.0,0.0
+2,66.77899931867917,0.0,0.2539125958426961,0.0,3.3150324618057843,0.0,0.47928868205312836,0.0,2.4074531283860985,0.0,2.0,0.0

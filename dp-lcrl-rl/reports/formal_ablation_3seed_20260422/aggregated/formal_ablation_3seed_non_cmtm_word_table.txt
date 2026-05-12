@@ -1,0 +1,9 @@
+Method            Reward (Final-100)  P2P Volume (Final-100)  Grid Trade (Final-100)  Carbon Resp. (Final-100)
+----------------  ------------------  ----------------------  ----------------------  ------------------------
+Full              73.915 +/- 1.808    0.160 +/- 0.121         2.928 +/- 0.099         2.035 +/- 0.034
+Mask ObsOnly      74.802 +/- 2.030    0.226 +/- 0.128         2.880 +/- 0.110         2.017 +/- 0.039
+Direct Max Scale  75.345 +/- 1.921    0.249 +/- 0.119         2.846 +/- 0.106         2.007 +/- 0.038
+
+Notes: Values are mean +/- std across 3 seeds. Each seed value is the mean of the last 100 training iterations.
+This non-CMTM ablation table removes the CMTM Stateless variant because the carbon-memory mechanism is validated separately.
+Grid Trade = grid_buy_mean_active + grid_sell_mean_active.

@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "completed_rows": 72,
+  "total_rows": 72,
+  "raw_csv": "C:\\Users\\zrway\\Desktop\\论文-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\reports\\formal_mask_ablation_20260430\\formal_mask_ablation_raw.csv",
+  "by_scenario_csv": "C:\\Users\\zrway\\Desktop\\论文-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\reports\\formal_mask_ablation_20260430\\formal_mask_ablation_by_scenario.csv",
+  "overall_csv": "C:\\Users\\zrway\\Desktop\\论文-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\reports\\formal_mask_ablation_20260430\\formal_mask_ablation_overall.csv",
+  "word_table": "C:\\Users\\zrway\\Desktop\\论文-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\reports\\formal_mask_ablation_20260430\\formal_mask_ablation_word_table.txt",
+  "figures": [
+    "C:\\Users\\zrway\\Desktop\\论文-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\reports\\formal_mask_ablation_20260430\\figures\\formal_mask_ablation_scale_sweep.png",
+    "C:\\Users\\zrway\\Desktop\\论文-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\reports\\formal_mask_ablation_20260430\\figures\\formal_mask_ablation_stress_summary.png",
+    "C:\\Users\\zrway\\Desktop\\论文-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\reports\\formal_mask_ablation_20260430\\figures\\formal_mask_ablation_training_trends.png"
+  ],
+  "updated_at": "2026-05-01 07:20:00"
+}

@@ -1,0 +1,55 @@
+{
+  "rows": [
+    {
+      "seed": "seed42",
+      "mean_reward": 72.31437341549649,
+      "final100_reward": 72.52689205243851,
+      "mean_p2p": 5.76909883639738,
+      "final100_p2p": 3.477687273281828,
+      "mean_grid_buy": 1982.7229592998467,
+      "final100_grid_buy": 2013.6809333623407,
+      "mean_grid_sell": 159.86075549121102,
+      "final100_grid_sell": 161.30936947050515,
+      "mean_carbon_load": 1467.4850549382097,
+      "final100_carbon_load": 1490.2009806304236
+    },
+    {
+      "seed": "seed43",
+      "mean_reward": 74.2990262857808,
+      "final100_reward": 74.4375416416592,
+      "mean_p2p": 63.18034545053162,
+      "final100_p2p": 58.378942315954035,
+      "mean_grid_buy": 1947.3819932820902,
+      "final100_grid_buy": 1976.3128457708074,
+      "mean_grid_sell": 123.82908713500048,
+      "final100_grid_sell": 123.84176682874228,
+      "mean_carbon_load": 1439.9781076790239,
+      "final100_carbon_load": 1462.5583535300393
+    },
+    {
+      "seed": "seed44",
+      "mean_reward": 72.68987055465061,
+      "final100_reward": 77.10701562335757,
+      "mean_p2p": 34.423847954253965,
+      "final100_p2p": 104.69209562233593,
+      "mean_grid_buy": 1983.14060694999,
+      "final100_grid_buy": 1924.2693699754964,
+      "mean_grid_sell": 151.86656868562574,
+      "final100_grid_sell": 69.09399902772395,
+      "mean_carbon_load": 1460.7243112589715,
+      "final100_carbon_load": 1425.168834479631
+    }
+  ],
+  "summary": {
+    "reward_mean_across_seeds": 74.69048310581842,
+    "reward_std_across_seeds": 1.8783623220668129,
+    "p2p_mean_across_seeds": 55.5162417371906,
+    "p2p_std_across_seeds": 41.370161592747074,
+    "grid_buy_mean_across_seeds": 1971.4210497028816,
+    "grid_buy_std_across_seeds": 36.66564394086607,
+    "grid_sell_mean_across_seeds": 118.08171177565713,
+    "grid_sell_std_across_seeds": 37.866452277583555,
+    "carbon_load_mean_across_seeds": 1459.309389546698,
+    "carbon_load_std_across_seeds": 26.648475046655115
+  }
+}

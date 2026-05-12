@@ -1,0 +1,9 @@
+Experiment                         Key Metric                         Full CMTM          No Storage Pool
+---------------------------------  ---------------------------------  -----------------  ----------------
+Carbon conservation / leakage      Recorded storage-discharge carbon  239.400 +/- 0.000  0.000 +/- 0.000
+Carbon conservation / leakage      Carbon leakage ratio               0.000 +/- 0.000    1.000 +/- 0.000
+Delayed attribution                Delayed carbon recovery ratio      0.906 +/- 0.000  0.000 +/- 0.000
+Same-policy counterfactual         Omitted storage carbon             0.000 +/- 0.000    86.682 +/- 7.547
+
+Notes: No Storage Pool is a zero-memory counterfactual under the same trajectory.
+It records no historical carbon when stored energy is discharged, so omitted storage carbon is leakage.

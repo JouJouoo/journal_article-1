@@ -1,0 +1,10 @@
+Method            Reward            P2P Volume       Grid Trade       Carbon Resp.   
+----------------  ----------------  ---------------  ---------------  ---------------
+Full              87.402 +/- 0.750  0.000 +/- 0.000  3.115 +/- 0.025  1.759 +/- 0.012
+CMTM Stateless    87.458 +/- 0.641  0.000 +/- 0.000  3.177 +/- 0.030  1.756 +/- 0.016
+Mask ObsOnly      88.034 +/- 0.624  0.000 +/- 0.000  3.145 +/- 0.034  1.745 +/- 0.016
+Direct Max Scale  92.859 +/- 0.525  0.200 +/- 0.003  2.959 +/- 0.034  1.651 +/- 0.014
+
+Notes: all checkpoints are evaluated with full CMTM and full mask under dynamic active-agent scenarios.
+Values are mean +/- std over scenarios after seed aggregation.
+Grid Trade = grid_buy_mean + grid_sell_mean.

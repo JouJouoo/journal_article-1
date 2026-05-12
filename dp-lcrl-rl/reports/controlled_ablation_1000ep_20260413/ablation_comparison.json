@@ -1,0 +1,106 @@
+{
+  "table_rows": [
+    {
+      "Method": "Full",
+      "Avg Reward": 73.04941588144607,
+      "Final100 Reward": 74.71867541575222,
+      "Final100 Reward Std": 0.2997924418591799,
+      "Avg P2P Volume": 48.467648127314476,
+      "Final100 P2P Volume": 56.99908349362876,
+      "Avg Grid Buy": 1753.8673655308414,
+      "Avg Carbon Load": 1295.5308643482103,
+      "Avg Active Agents": 26.23325,
+      "Convergence Iter (95%)": 117,
+      "Mean Policy Loss": 0.9707519508483586,
+      "Mean Value Loss": 0.21355811675861477,
+      "Mean Entropy": 0.3673401565521956,
+      "Mean FPS": 1428.8035492496606,
+      "Summary JSON": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\full_controlled_baseline_1000ep_20260413\\paper_training_summary.json",
+      "Delta Reward vs Full (%)": 0.0,
+      "Delta P2P vs Full (%)": 0.0,
+      "Delta Grid Buy vs Full (%)": 0.0,
+      "Delta Carbon Load vs Full (%)": 0.0
+    },
+    {
+      "Method": "CMTM Stateless",
+      "Avg Reward": 67.17752180233938,
+      "Final100 Reward": 68.63424293400578,
+      "Final100 Reward Std": 0.3447657594127255,
+      "Avg P2P Volume": 57.63772978831698,
+      "Final100 P2P Volume": 81.03094672407015,
+      "Avg Grid Buy": 1901.2645285471467,
+      "Avg Carbon Load": 1367.7608571127141,
+      "Avg Active Agents": 26.23325,
+      "Convergence Iter (95%)": 157,
+      "Mean Policy Loss": 0.8166776424697543,
+      "Mean Value Loss": 0.205200458098948,
+      "Mean Entropy": 0.37136781696379184,
+      "Mean FPS": 1555.3013719962498,
+      "Summary JSON": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\ablation_cmtm_stateless_1000ep_20260413\\paper_training_summary.json",
+      "Delta Reward vs Full (%)": -8.038249188243123,
+      "Delta P2P vs Full (%)": 18.92000543726529,
+      "Delta Grid Buy vs Full (%)": 8.404122564404561,
+      "Delta Carbon Load vs Full (%)": 5.575320106390761
+    },
+    {
+      "Method": "Mask ObsOnly",
+      "Avg Reward": 73.86481561519298,
+      "Final100 Reward": 75.64082604438568,
+      "Final100 Reward Std": 0.3693515673812104,
+      "Avg P2P Volume": 67.0697240426055,
+      "Final100 P2P Volume": 82.38827177255207,
+      "Avg Grid Buy": 1741.1957784457534,
+      "Avg Carbon Load": 1285.047939316277,
+      "Avg Active Agents": 26.23325,
+      "Convergence Iter (95%)": 181,
+      "Mean Policy Loss": 0.8935867757434958,
+      "Mean Value Loss": 0.2068873171329498,
+      "Mean Entropy": 0.4262560686737299,
+      "Mean FPS": 1499.2921021918528,
+      "Summary JSON": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\ablation_mask_obs_only_1000ep_20260413\\paper_training_summary.json",
+      "Delta Reward vs Full (%)": 1.116230326975167,
+      "Delta P2P vs Full (%)": 38.380397304253805,
+      "Delta Grid Buy vs Full (%)": -0.7224940342768025,
+      "Delta Carbon Load vs Full (%)": -0.8091605781393187
+    },
+    {
+      "Method": "Direct Max Scale",
+      "Avg Reward": 73.55501641947917,
+      "Final100 Reward": 74.85010368209414,
+      "Final100 Reward Std": 0.20879873945043995,
+      "Avg P2P Volume": 53.452376781161846,
+      "Final100 P2P Volume": 62.444040181842084,
+      "Avg Grid Buy": 1996.1131079180057,
+      "Avg Carbon Load": 1475.2201244536514,
+      "Avg Active Agents": 30.0,
+      "Convergence Iter (95%)": 100,
+      "Mean Policy Loss": -0.0033865528264354007,
+      "Mean Value Loss": 0.09901643702313304,
+      "Mean Entropy": 0.42446383453011516,
+      "Mean FPS": 1615.2316547575017,
+      "Summary JSON": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\ablation_scale_directmax_1000ep_20260413\\paper_training_summary.json",
+      "Delta Reward vs Full (%)": 0.6921349499271294,
+      "Delta P2P vs Full (%)": 10.28465140448639,
+      "Delta Grid Buy vs Full (%)": 13.812090192683636,
+      "Delta Carbon Load vs Full (%)": 13.869932785881081
+    }
+  ],
+  "runs": [
+    {
+      "label": "Full",
+      "summary_path": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\full_controlled_baseline_1000ep_20260413\\paper_training_summary.json"
+    },
+    {
+      "label": "CMTM Stateless",
+      "summary_path": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\ablation_cmtm_stateless_1000ep_20260413\\paper_training_summary.json"
+    },
+    {
+      "label": "Mask ObsOnly",
+      "summary_path": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\ablation_mask_obs_only_1000ep_20260413\\paper_training_summary.json"
+    },
+    {
+      "label": "Direct Max Scale",
+      "summary_path": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\ablation_scale_directmax_1000ep_20260413\\paper_training_summary.json"
+    }
+  ]
+}

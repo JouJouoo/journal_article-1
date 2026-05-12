@@ -1,0 +1,13 @@
+{
+  "num_seeds": 3,
+  "total_load_carbon_full": 56.59629159880703,
+  "total_load_carbon_stateless": 56.608587067213705,
+  "avg_seller0_label_full": 0.35808131616795436,
+  "avg_seller1_label_full": 0.699999988079071,
+  "avg_seller0_label_stateless": 0.44558057189957856,
+  "avg_seller1_label_stateless": 0.6718574473634362,
+  "gap_seller0_mean": -0.08749925573162423,
+  "gap_seller1_mean": 0.02814254071563482,
+  "gap_seller0_std": 0.17101107146205716,
+  "gap_seller1_std": 0.10781861552971798
+}

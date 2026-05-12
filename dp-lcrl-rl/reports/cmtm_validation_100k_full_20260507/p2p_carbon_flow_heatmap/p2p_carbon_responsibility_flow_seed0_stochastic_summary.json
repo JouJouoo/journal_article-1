@@ -1,0 +1,16 @@
+{
+  "run_dir": "C:\\Users\\zrway\\Desktop\\\u8bba\u6587-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\runs\\dp_lcrl_100k_s012_carbon008_20260506_seed0",
+  "checkpoint": "C:\\Users\\zrway\\Desktop\\\u8bba\u6587-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\runs\\dp_lcrl_100k_s012_carbon008_20260506_seed0\\models\\transformer_2083.pt",
+  "fixed_eval_seed": 20260508,
+  "stochastic_policy": true,
+  "episode_steps": 24,
+  "total_p2p_carbon_responsibility": 0.0,
+  "total_p2p_energy": 386.2615028851201,
+  "nonzero_p2p_edges": 0,
+  "reward_mean_step": -2.353223848467072,
+  "p2p_volume_total": 386.2615028851201,
+  "grid_buy_total": 1851.6671864772936,
+  "grid_sell_total": 26.97911874132294,
+  "load_carbon_total": 1175.1718358596154,
+  "top_edges": []
+}

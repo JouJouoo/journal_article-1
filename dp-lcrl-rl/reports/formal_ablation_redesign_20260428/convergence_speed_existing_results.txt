@@ -1,0 +1,25 @@
+Existing 3-seed convergence-speed comparison
+
+Source:
+reports/formal_ablation_3seed_20260422/aggregated/formal_ablation_3seed_curve_points.csv
+
+Time-to-threshold by smoothed reward curve
+
+Method             R>=70  R>=72  R>=73  R>=74  R>=75
+-----------------  -----  -----  -----  -----  -----
+Full(curriculum)     152    180    211   3564      -
+Direct Max           148    184    516    644   2345
+Mask ObsOnly         190    220    247    436    825
+
+Reward AUC / average reward during training
+
+Method             First 500  First 1000  First 2000  All iters  Final 100
+-----------------  ---------  ----------  ----------  ---------  ---------
+Full(curriculum)      70.027      71.070      71.778     73.390     73.920
+Direct Max            70.224      72.143      73.086     74.776     75.332
+Mask ObsOnly          69.945      72.251      72.687     74.050     74.804
+
+Interpretation:
+Direct Max is not only better at the final stage; it also has higher early-training reward AUC.
+Full(curriculum) reaches 99% of its own final reward quickly, but its own final reward is lower.
+Therefore, using convergence speed cannot support the old Full(curriculum) as the best method.

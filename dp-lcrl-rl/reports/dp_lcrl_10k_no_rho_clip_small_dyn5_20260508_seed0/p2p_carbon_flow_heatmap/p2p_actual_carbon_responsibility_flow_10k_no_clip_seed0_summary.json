@@ -1,0 +1,21 @@
+{
+  "run_dir": "C:\\Users\\zrway\\Desktop\\\u8bba\u6587-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\runs\\dp_lcrl_10k_no_rho_clip_small_dyn5_20260508_seed0",
+  "checkpoint": "C:\\Users\\zrway\\Desktop\\\u8bba\u6587-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\runs\\dp_lcrl_10k_no_rho_clip_small_dyn5_20260508_seed0\\models\\transformer_208.pt",
+  "fixed_eval_seed": 20260508,
+  "stochastic_policy": false,
+  "flow_metric": "actual",
+  "grid_carbon_factor": 0.7,
+  "episode_steps": 24,
+  "total_plotted_p2p_carbon_flow": 0.0,
+  "total_abs_plotted_p2p_carbon_flow": 0.0,
+  "total_actual_p2p_carbon_responsibility": 0.0,
+  "total_p2p_low_carbon_contribution": 0.0,
+  "total_p2p_energy": 0.0,
+  "nonzero_p2p_edges": 0,
+  "reward_mean_step": -2.8847586661577225,
+  "p2p_volume_total": 0.0,
+  "grid_buy_total": 2239.6789039233477,
+  "grid_sell_total": 415.1419312580486,
+  "load_carbon_total": 713.9897230742577,
+  "top_edges": []
+}

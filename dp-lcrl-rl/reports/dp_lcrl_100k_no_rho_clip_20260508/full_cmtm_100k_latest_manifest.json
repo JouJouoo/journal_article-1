@@ -1,0 +1,26 @@
+{
+  "description": "Latest Full CMTM DP-LCRL checkpoints trained for 100000 environment steps, no rho clipping, seeds 0/1/2.",
+  "runs": [
+    {
+      "method": "full",
+      "status": "completed",
+      "seed": 0,
+      "run_dir": "C:/Users/zrway/Desktop/论文-1.1/dp-lcrl-rl 2/dp-lcrl-rl/runs/dp_lcrl_100k_no_rho_clip_20260508_dp_lcrl_seed0",
+      "experiment_name": "dp_lcrl_100k_no_rho_clip_20260508_dp_lcrl_seed0"
+    },
+    {
+      "method": "full",
+      "status": "completed",
+      "seed": 1,
+      "run_dir": "C:/Users/zrway/Desktop/论文-1.1/dp-lcrl-rl 2/dp-lcrl-rl/runs/dp_lcrl_100k_no_rho_clip_20260508_dp_lcrl_seed1",
+      "experiment_name": "dp_lcrl_100k_no_rho_clip_20260508_dp_lcrl_seed1"
+    },
+    {
+      "method": "full",
+      "status": "completed",
+      "seed": 2,
+      "run_dir": "C:/Users/zrway/Desktop/论文-1.1/dp-lcrl-rl 2/dp-lcrl-rl/runs/dp_lcrl_100k_no_rho_clip_20260508_dp_lcrl_seed2",
+      "experiment_name": "dp_lcrl_100k_no_rho_clip_20260508_dp_lcrl_seed2"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+﻿seed,initial_storage_carbon,final_storage_carbon,source_injection,load_responsibility,charge_responsibility,storage_discharge_carbon_full,storage_discharge_carbon_no_pool,storage_discharge_energy,storage_charge_energy,omitted_storage_carbon_no_pool,storage_carbon_leakage_ratio_no_pool,delayed_carbon_recovery_ratio_full,delayed_carbon_recovery_ratio_no_pool,reward_mean
+20260427,20.160000000000007,0.0,970.5693449166705,951.0346201437126,244.04210110714564,239.39999624919884,0.0,342.0,348.63157894736844,239.39999624919884,1.0,0.9061244980489823,0.0,90.6352800687154
+20260428,20.160000000000007,0.0,979.9428650482483,960.6422383952632,244.04210110714564,239.39999624919884,0.0,342.0,348.63157894736844,239.39999624919884,1.0,0.9061244980489823,0.0,89.83413456281028

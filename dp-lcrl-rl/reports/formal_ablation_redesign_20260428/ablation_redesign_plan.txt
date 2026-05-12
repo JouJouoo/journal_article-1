@@ -1,0 +1,112 @@
+正式消融实验重新设计方案 2026-04-28
+
+一、核心调整
+
+当前结果中，原 Direct Max Scale 配置在奖励、P2P 交易量、电网交易量和碳责任指标上均优于原 Full。
+因此不能继续把 Direct Max Scale 作为“去掉模块后的消融项”，否则论文主消融会天然出现 Full 不是最优的问题。
+
+新的正式口径应当改为：
+
+Full / Ours = full CMTM + full mask + direct_max scale training
+
+也就是说，将当前表现最优的完整配置作为最终方法。原 curriculum 配置不再作为主 Full，而作为训练尺度策略对比或附录分析。
+
+二、主消融实验设置
+
+主消融只验证最终方法中的关键有效模块，所有对比均应从同一个最终 Full 配置中移除单一因素。
+
+实验组别：
+
+1. Full / Ours
+   cmtm_mode=full, mask_mode=full, scale_mode=direct_max
+
+2. w/o Structured Mask
+   cmtm_mode=full, mask_mode=obs_only, scale_mode=direct_max
+
+3. w/o Direct Scale Training
+   cmtm_mode=full, mask_mode=full, scale_mode=curriculum
+
+说明：
+第 3 组不建议在正文中解释为“模块删除后应当更差”，而应解释为训练尺度策略对比。
+如果正文篇幅有限，可以把第 3 组放入附录，只在主消融中保留 Full 与 w/o Structured Mask。
+
+三、CMTM 处理
+
+CMTM 不再进入主消融表。
+原因是去除储能碳含量池会改变碳责任记录口径，使奖励和碳责任指标不再完全可比。
+CMTM 已通过单独的碳记忆追踪有效性实验验证，包括历史碳责任记录、碳泄漏率、延迟碳责任恢复率和同策略反事实遗漏碳责任。
+
+四、正式评价口径
+
+主表不只报告静态均值，而采用“动态节点鲁棒评价”作为主要评价口径。
+
+保留四个原始指标：
+1. 奖励均值，越高越好。
+2. P2P 交易量均值，越高越好。
+3. 电网交易量均值，越低越好。
+4. 碳责任均值，越低越好。
+
+新增鲁棒性指标：
+1. 最坏场景奖励，即所有动态节点场景中的最低奖励，越高越好。
+2. 奖励波动，即不同动态场景下奖励标准差，越低越好。
+3. 节点扰动恢复损失，即节点变化后奖励相对稳定阶段的下降幅度，越低越好。
+4. 未匹配交易率，即计划 P2P 交易中未成交部分占比，越低越好。
+
+综合得分建议：
+
+Robust Score =
+0.30 * normalized_reward
++ 0.20 * normalized_p2p
++ 0.20 * normalized_inverse_grid_trade
++ 0.15 * normalized_inverse_carbon
++ 0.15 * normalized_robustness
+
+其中 normalized_robustness 由最坏场景奖励、奖励波动、恢复损失和未匹配交易率共同构成。
+论文正文可将 Robust Score 作为排序指标，同时保留原始四项指标，避免只靠单一奖励解释。
+
+五、正式实验场景
+
+建议主评价使用以下动态节点场景：
+
+1. static30
+   min_agents=30, step_churn_prob=0.00
+
+2. scale_var20
+   min_agents=20, step_churn_prob=0.00
+
+3. churn20_p20
+   min_agents=20, step_churn_prob=0.20
+
+4. churn10_p30
+   min_agents=10, step_churn_prob=0.30
+
+5. churn05_p50
+   min_agents=5, step_churn_prob=0.50
+
+6. inactive_noise_stress
+   min_agents=10, step_churn_prob=0.30, inactive observation noise enabled
+
+inactive_noise_stress 专门验证结构化掩码模块。
+在该场景中，非活跃节点的观测被注入噪声，但环境仍通过 agent_mask 忽略其动作。
+Full 的结构化掩码应能过滤非活跃节点干扰，而 obs_only 对照组更容易受到非活跃节点噪声影响。
+
+六、下一轮 3-seed 训练命令
+
+Full / Ours:
+C:\Users\23034\.conda\envs\mat\python.exe -m dp_lcrl_rl.scripts.train.train_paper_mat --algorithm_name mat --num_agents 30 --min_agents 30 --curriculum_min_agents 30 --curriculum_warmup_episodes 0 --step_churn_prob 0.0 --episode_length 24 --n_rollout_threads 4 --n_eval_rollout_threads 1 --num_env_steps 960000 --save_interval 1000 --use_wandb false --cmtm_mode full --mask_mode full --scale_mode direct_max --experiment_name paper_core_full_direct_10000ep_seed{SEED}_20260428 --seed {SEED}
+
+w/o Structured Mask:
+C:\Users\23034\.conda\envs\mat\python.exe -m dp_lcrl_rl.scripts.train.train_paper_mat --algorithm_name mat --num_agents 30 --min_agents 30 --curriculum_min_agents 30 --curriculum_warmup_episodes 0 --step_churn_prob 0.0 --episode_length 24 --n_rollout_threads 4 --n_eval_rollout_threads 1 --num_env_steps 960000 --save_interval 1000 --use_wandb false --cmtm_mode full --mask_mode obs_only --scale_mode direct_max --experiment_name paper_core_mask_obs_only_direct_10000ep_seed{SEED}_20260428 --seed {SEED}
+
+w/o Direct Scale Training:
+C:\Users\23034\.conda\envs\mat\python.exe -m dp_lcrl_rl.scripts.train.train_paper_mat --algorithm_name mat --num_agents 30 --min_agents 20 --curriculum_min_agents 20 --curriculum_warmup_episodes 2000 --step_churn_prob 0.0 --episode_length 24 --n_rollout_threads 4 --n_eval_rollout_threads 1 --num_env_steps 960000 --save_interval 1000 --use_wandb false --cmtm_mode full --mask_mode full --scale_mode curriculum --experiment_name paper_core_curriculum_10000ep_seed{SEED}_20260428 --seed {SEED}
+
+建议种子：
+42, 43, 44
+
+七、论文表述原则
+
+正文主消融表中应把 Full / Ours 定义为最终采用的完整配置。
+不要再把旧的 curriculum Full 作为主方法，否则会与已有结果冲突。
+Direct Max 不应再叫 Direct Max Scale 消融项，而应作为最终 Full 的尺度训练策略。
+课程训练若保留，应作为训练策略敏感性分析，而不是核心模块消融。

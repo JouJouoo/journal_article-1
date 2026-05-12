@@ -1,0 +1,26 @@
+{
+  "description": "Full CMTM DP-LCRL checkpoints trained for 100000 environment steps with carbon_price=0.08.",
+  "runs": [
+    {
+      "method": "full",
+      "status": "completed",
+      "seed": 0,
+      "run_dir": "C:/Users/zrway/Desktop/\u8bba\u6587-1.1/dp-lcrl-rl 2/dp-lcrl-rl/runs/dp_lcrl_100k_s012_carbon008_20260506_seed0",
+      "experiment_name": "dp_lcrl_100k_s012_carbon008_20260506_seed0"
+    },
+    {
+      "method": "full",
+      "status": "completed",
+      "seed": 1,
+      "run_dir": "C:/Users/zrway/Desktop/\u8bba\u6587-1.1/dp-lcrl-rl 2/dp-lcrl-rl/runs/dp_lcrl_100k_s012_carbon008_20260506_seed1",
+      "experiment_name": "dp_lcrl_100k_s012_carbon008_20260506_seed1"
+    },
+    {
+      "method": "full",
+      "status": "completed",
+      "seed": 2,
+      "run_dir": "C:/Users/zrway/Desktop/\u8bba\u6587-1.1/dp-lcrl-rl 2/dp-lcrl-rl/runs/dp_lcrl_100k_s012_carbon008_20260506_seed2",
+      "experiment_name": "dp_lcrl_100k_s012_carbon008_20260506_seed2"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "num_seeds": 20,
+  "initial_storage_carbon_mean": 6.719999999999999,
+  "initial_storage_carbon_std": 0.0,
+  "total_charge_injection_mean": 81.34736703571522,
+  "total_charge_injection_std": 0.0,
+  "total_discharge_removal_mean": 79.79999874973298,
+  "total_discharge_removal_std": 1.4580029302424492e-14,
+  "final_storage_carbon_mean": 0.0,
+  "final_storage_carbon_std": 0.0,
+  "total_input_mean": 88.06736703571524,
+  "total_input_std": 1.4580029302424492e-14,
+  "total_accounted_output_mean": 79.79999874973298,
+  "total_accounted_output_std": 1.4580029302424492e-14,
+  "residual_mean": 8.267368285982258,
+  "residual_std": 0.0,
+  "residual_pct_mean": 9.387550195101747,
+  "residual_pct_std": 1.8225036628030615e-15,
+  "recovery_ratio_mean": 0.9061244980489824,
+  "recovery_ratio_std": 1.1390647892519134e-16
+}

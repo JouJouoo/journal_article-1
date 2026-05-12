@@ -1,0 +1,62 @@
+{
+  "runs": [
+    {
+      "run": "full_multiseed5000_penalty_seed42_20260415",
+      "seed": 42,
+      "thread_level_episode_summaries": 20000,
+      "training_iterations": 5000,
+      "mean_reward": 72.38511688366421,
+      "final100_reward": 72.81451395924886,
+      "final100_p2p_volume_mean_active": 0.0664820512259548,
+      "final100_grid_buy_mean_active": 2.784121663160405,
+      "final100_grid_sell_mean_active": 0.2022872324075696,
+      "final100_carbon_responsibility_last_mean": 2.0252916764452
+    },
+    {
+      "run": "full_multiseed5000_penalty_seed43_20260415",
+      "seed": 43,
+      "thread_level_episode_summaries": 20000,
+      "training_iterations": 5000,
+      "mean_reward": 73.36429818795176,
+      "final100_reward": 73.96783049477472,
+      "final100_p2p_volume_mean_active": 0.1545918039024079,
+      "final100_grid_buy_mean_active": 2.753300878310769,
+      "final100_grid_sell_mean_active": 0.17607612936096292,
+      "final100_carbon_responsibility_last_mean": 1.992883804672299
+    },
+    {
+      "run": "full_multiseed5000_penalty_seed44_20260415",
+      "seed": 44,
+      "thread_level_episode_summaries": 20000,
+      "training_iterations": 5000,
+      "mean_reward": 74.25091975391281,
+      "final100_reward": 75.53596556091308,
+      "final100_p2p_volume_mean_active": 0.2598270758026621,
+      "final100_grid_buy_mean_active": 2.713661821409279,
+      "final100_grid_sell_mean_active": 0.13674092253596998,
+      "final100_carbon_responsibility_last_mean": 2.0205522814370016
+    }
+  ],
+  "aggregate": {
+    "final100_reward": {
+      "mean": 74.10610333831222,
+      "std": 1.1153218487638916
+    },
+    "final100_p2p_volume_mean_active": {
+      "mean": 0.16030031031034161,
+      "std": 0.0790359197504483
+    },
+    "final100_grid_buy_mean_active": {
+      "mean": 2.7503614542934844,
+      "std": 0.02884010500516573
+    },
+    "final100_grid_sell_mean_active": {
+      "mean": 0.17170142810150082,
+      "std": 0.026937374194949466
+    },
+    "final100_carbon_responsibility_last_mean": {
+      "mean": 2.0129092541848337,
+      "std": 0.014291709424120383
+    }
+  }
+}

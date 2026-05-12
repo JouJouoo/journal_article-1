@@ -1,0 +1,102 @@
+{
+  "run_dir": "C:\\Users\\zrway\\Desktop\\\u8bba\u6587-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\runs\\dp_lcrl_100k_no_rho_clip_20260508_dp_lcrl_seed0",
+  "checkpoint": "C:\\Users\\zrway\\Desktop\\\u8bba\u6587-1.1\\dp-lcrl-rl 2\\dp-lcrl-rl\\runs\\dp_lcrl_100k_no_rho_clip_20260508_dp_lcrl_seed0\\models\\transformer_2083.pt",
+  "fixed_eval_seed": 20260508,
+  "stochastic_policy": false,
+  "flow_metric": "actual",
+  "grid_carbon_factor": 0.7,
+  "episode_steps": 24,
+  "total_plotted_p2p_carbon_flow": -230.18197903993303,
+  "total_abs_plotted_p2p_carbon_flow": 230.18197903993303,
+  "total_actual_p2p_carbon_responsibility": -230.18197903993303,
+  "total_p2p_low_carbon_contribution": 468.6810671400658,
+  "total_p2p_energy": 340.71298300018964,
+  "nonzero_p2p_edges": 203,
+  "reward_mean_step": -2.272820290798942,
+  "p2p_volume_total": 340.7129830001896,
+  "grid_buy_total": 1898.2006552454857,
+  "grid_sell_total": 73.66378826865338,
+  "load_carbon_total": 242.05323552769138,
+  "top_edges": [
+    {
+      "seller_id": 1,
+      "buyer_id": 25,
+      "carbon_flow": -7.152366807615648,
+      "actual_carbon_responsibility": -7.152366807615648,
+      "low_carbon_contribution": 14.305773235358382,
+      "p2p_energy": 10.219152039632476
+    },
+    {
+      "seller_id": 4,
+      "buyer_id": 20,
+      "carbon_flow": -7.015091329992343,
+      "actual_carbon_responsibility": -7.015091329992343,
+      "low_carbon_contribution": 14.030537374898413,
+      "p2p_energy": 10.022065778437241
+    },
+    {
+      "seller_id": 3,
+      "buyer_id": 19,
+      "carbon_flow": -5.684406135082814,
+      "actual_carbon_responsibility": -5.684406135082814,
+      "low_carbon_contribution": 11.368865260776742,
+      "p2p_energy": 8.12065589384847
+    },
+    {
+      "seller_id": 1,
+      "buyer_id": 16,
+      "carbon_flow": -5.333700923296417,
+      "actual_carbon_responsibility": -5.333700923296417,
+      "low_carbon_contribution": 10.667584942423245,
+      "p2p_energy": 7.619834313038326
+    },
+    {
+      "seller_id": 2,
+      "buyer_id": 25,
+      "carbon_flow": -4.874623726451301,
+      "actual_carbon_responsibility": -4.874623726451301,
+      "low_carbon_contribution": 9.749431774142286,
+      "p2p_energy": 6.964011496701408
+    },
+    {
+      "seller_id": 3,
+      "buyer_id": 25,
+      "carbon_flow": -4.109845674014306,
+      "actual_carbon_responsibility": -4.109845674014306,
+      "low_carbon_contribution": 8.220063305784226,
+      "p2p_energy": 5.871739473957031
+    },
+    {
+      "seller_id": 15,
+      "buyer_id": 29,
+      "carbon_flow": -3.7609878986420817,
+      "actual_carbon_responsibility": -3.7609878986420817,
+      "low_carbon_contribution": 7.526206700384737,
+      "p2p_energy": 5.3788840024895075
+    },
+    {
+      "seller_id": 2,
+      "buyer_id": 26,
+      "carbon_flow": -3.6242569992095195,
+      "actual_carbon_responsibility": -3.6242569992095195,
+      "low_carbon_contribution": 7.248790627520757,
+      "p2p_energy": 5.1779051833017675
+    },
+    {
+      "seller_id": 8,
+      "buyer_id": 26,
+      "carbon_flow": -3.222878011797991,
+      "actual_carbon_responsibility": -3.222878011797991,
+      "low_carbon_contribution": 6.44627480066829,
+      "p2p_energy": 4.604852555528999
+    },
+    {
+      "seller_id": 21,
+      "buyer_id": 1,
+      "carbon_flow": -3.2011609984784974,
+      "actual_carbon_responsibility": -3.2011609984784974,
+      "low_carbon_contribution": 6.462416520699234,
+      "p2p_energy": 4.6589364603153385
+    }
+  ]
+}

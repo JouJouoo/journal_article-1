@@ -1,0 +1,54 @@
+{
+  "config": {
+    "fixed_eval_seed": 20260415,
+    "eval_episodes": 2,
+    "n_eval_rollout_threads": 1,
+    "num_agents": 30,
+    "min_agents": 20,
+    "step_churn_prob": 0.0,
+    "checkpoint_episodes": [
+      1000
+    ],
+    "run_dirs": [
+      "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\full_multiseed5000_penalty_seed42_20260415"
+    ],
+    "labels": [
+      "Seed 50004220260415"
+    ]
+  },
+  "records": [
+    {
+      "reward_mean": 74.35410905169627,
+      "reward_std": 0.6246212722908737,
+      "p2p_mean": 0.12432530776407749,
+      "p2p_std": 0.0004779333846097397,
+      "grid_buy_mean": 2.6808256215653943,
+      "grid_buy_std": 0.05945147923843175,
+      "grid_sell_mean": 0.16489310038357707,
+      "grid_sell_std": 0.00045277647510051644,
+      "carbon_mean": 1.99997873754,
+      "carbon_std": 0.039407368782348184,
+      "n_agents_mean": 28.0,
+      "n_eval_episodes": 2,
+      "run_dir": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\full_multiseed5000_penalty_seed42_20260415",
+      "label": "Seed 50004220260415",
+      "checkpoint_episode": 1000,
+      "checkpoint_path": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\full_multiseed5000_penalty_seed42_20260415\\models\\transformer_1000.pt"
+    }
+  ],
+  "aggregate": [
+    {
+      "checkpoint_episode": 1000,
+      "reward_mean": 74.35410905169627,
+      "reward_std": 0.0,
+      "p2p_mean": 0.12432530776407749,
+      "p2p_std": 0.0,
+      "grid_buy_mean": 2.6808256215653943,
+      "grid_buy_std": 0.0,
+      "grid_sell_mean": 0.16489310038357707,
+      "grid_sell_std": 0.0,
+      "carbon_mean": 1.99997873754,
+      "carbon_std": 0.0
+    }
+  ]
+}

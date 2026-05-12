@@ -1,0 +1,39 @@
+# Local assistant/tooling state
+.claude/
+.agents/
+.git/
+.gitdata/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python caches and build outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated experiment/runtime outputs
+runs/
+eval_runs/
+tmp_eval_runtime/
+tmp_test_runtime/
+*.pid
+
+# Logs
+*.log
+
+# Local Git transfer backups
+*.bundle
+
+# Old nested project copy kept locally when Windows locks the directory
+/dp-lcrl-rl 2/

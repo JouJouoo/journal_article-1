@@ -1,0 +1,100 @@
+结构化掩码消融实验评估与改进方案
+
+一、最终主方法定义
+
+最终 Full / Ours 定义为：
+
+Full / Ours = full CMTM + structured full mask + direct max scale training
+
+其中 direct max scale training 不再作为主消融项，而作为最终方法的训练策略。
+CMTM 不进入主消融表，继续在碳记忆追踪有效性实验中单独验证。
+主消融只保留结构化掩码模块：
+
+Full / Ours:
+cmtm_mode=full, mask_mode=full, scale_mode=direct_max
+
+w/o Structured Mask:
+cmtm_mode=full, mask_mode=obs_only, scale_mode=direct_max
+
+二、当前已有 Mask ObsOnly 消融是否合理
+
+当前已有的 Mask ObsOnly 结果不能直接作为新的正式主消融结果。
+
+原因 1：训练口径不一致。
+旧 Mask ObsOnly 使用的是：
+cmtm_mode=full, mask_mode=obs_only, scale_mode=curriculum
+
+新的 Full / Ours 使用的是：
+cmtm_mode=full, mask_mode=full, scale_mode=direct_max
+
+两者同时改变了 mask_mode 和 scale_mode，因此不能作为单因素结构化掩码消融。
+
+原因 2：当前 obs_only 对照较弱。
+代码中 mask_mode=obs_only 只是让 Transformer 内部看到全 1 的 agent_mask，即不使用结构化注意力掩码。
+但环境中非活跃节点的观测已经被置为全零，非活跃节点动作也会被环境忽略。
+因此 obs_only 模型仍然可以通过零观测隐式识别非活跃节点，结构化掩码的优势不会被充分放大。
+
+原因 3：原训练场景节点扰动不足。
+旧训练命令中 step_churn_prob=0.0，节点参与集合主要按 episode 重采样，缺少 episode 内频繁节点进出。
+结构化掩码的主要价值在动态节点变化场景，而不是静态或弱动态场景。
+
+三、改进后的正式实验设计
+
+正式训练组别：
+
+1. Full / Ours
+   full CMTM + structured full mask + direct max scale training
+   可复用已有 direct_max 三个 seed 的 checkpoint，并在论文中重命名为 Full / Ours。
+
+2. w/o Structured Mask
+   full CMTM + obs_only mask + direct max scale training
+   需要重新训练 3 seeds，确保与 Full / Ours 只差 mask_mode。
+
+正式评价场景：
+
+1. Static Scale Sweep
+   active_agent_count = 1, 2, ..., 30
+   用于验证不同节点规模下的平均性能。
+
+2. Dynamic Churn Stress
+   min_agents=20, step_churn_prob=0.10/0.20/0.30
+   用于验证常规动态参与鲁棒性。
+
+3. Strong Churn Stress
+   min_agents=5 或 10, step_churn_prob=0.50
+   用于验证大幅节点变化场景。
+
+4. Inactive Observation Noise Stress
+   对非活跃节点注入非零噪声或上一时刻残留观测。
+   环境仍通过 agent_mask 忽略非活跃节点动作，但模型输入中非活跃槽位不再是全零。
+   该场景专门用于检验结构化掩码是否能过滤无效节点干扰。
+
+四、建议报告指标
+
+保留原四项指标：
+1. 奖励均值，越高越好。
+2. P2P 交易量均值，越高越好。
+3. 电网交易量均值，越低越好。
+4. 碳责任均值，越低越好。
+
+增加掩码鲁棒性指标：
+1. 最坏场景奖励，越高越好。
+2. 奖励标准差，越低越好。
+3. 节点扰动后恢复损失，越低越好。
+4. 掩码干扰敏感度，即加入非活跃节点噪声前后的性能下降幅度，越低越好。
+5. 注意力泄漏量，即模型分配到非活跃节点的注意力质量，越低越好。
+
+五、论文表达建议
+
+不建议写“结构化掩码在所有静态均值指标上都显著最优”。
+更合理的表达是：
+
+结构化掩码的作用主要体现在动态节点参与场景下对无效节点信息的屏蔽能力。
+在静态或非活跃节点观测为零的场景中，obs_only 对照仍可通过零填充隐式识别非活跃节点，因此二者差距可能较小。
+当节点频繁进出或非活跃节点观测存在噪声/残留时，Full / Ours 能够利用显式 agent_mask 抑制无效节点对注意力和动作生成的干扰，从而获得更稳定的交易收益和更低的性能波动。
+
+六、下一步
+
+需要重新训练 w/o Structured Mask 的 3-seed direct_max 版本。
+已有 direct_max 三个 seed 可作为新的 Full / Ours。
+随后重新进行 scale sweep、dynamic churn stress 和 inactive observation noise stress 三类评价。

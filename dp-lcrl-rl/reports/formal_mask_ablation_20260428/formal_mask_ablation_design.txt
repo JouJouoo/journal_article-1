@@ -1,0 +1,22 @@
+Formal structured-mask ablation design (2026-04-28)
+
+Latest method definition:
+Full / Ours = CMTM + structural mask + direct maximum-scale training.
+Direct maximum-scale training is no longer treated as an ablation term.
+
+Compared methods:
+1. Full / Ours: reuse completed direct_max seed 42/43/44 checkpoints.
+2. w/o Structured Mask: train obs_only + direct_max seed 42/43/44 checkpoints.
+
+Evaluation protocol:
+1. Fixed scale sweep: exactly 1, 2, ..., 30 active agents.
+2. Dynamic participation: variable scale and churn scenarios.
+3. Inactive-noise stress: inject noise only into inactive padded observations.
+4. Training trends: reward, P2P trade, grid trade, and carbon responsibility over training.
+
+Primary metrics:
+Reward mean, P2P trading volume mean, grid trading volume mean, carbon responsibility mean.
+
+Interpretation:
+The mask module is expected to show its value under variable participation and inactive-slot perturbations.
+The inactive-noise stress test avoids relying only on zero-padded inactive observations, which made the older obs_only ablation too weak.

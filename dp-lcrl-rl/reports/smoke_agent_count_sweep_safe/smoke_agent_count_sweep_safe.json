@@ -1,0 +1,91 @@
+{
+  "config": {
+    "fixed_eval_seed": 20260417,
+    "eval_episodes": 1,
+    "n_eval_rollout_threads": 1,
+    "num_agents": 30,
+    "active_counts": [
+      1,
+      2
+    ],
+    "checkpoint_episode": 10000,
+    "run_dirs": [
+      "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\full_multiseed10000_rerun_seed42_20260416"
+    ],
+    "labels": [
+      "Seed42"
+    ]
+  },
+  "records": [
+    {
+      "reward_mean": 37.16862085958322,
+      "reward_std": 0.0,
+      "p2p_mean": 0.0,
+      "p2p_std": 0.0,
+      "grid_buy_mean": 1.7810652150110589,
+      "grid_buy_std": 0.0,
+      "grid_sell_mean": 1.5621304266478495,
+      "grid_sell_std": 0.0,
+      "carbon_mean": 1.3677301253333958,
+      "carbon_std": 0.0,
+      "n_agents_mean": 1.0,
+      "n_eval_episodes": 1,
+      "run_dir": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\full_multiseed10000_rerun_seed42_20260416",
+      "label": "Seed42",
+      "checkpoint_episode": 10000,
+      "checkpoint_path": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\full_multiseed10000_rerun_seed42_20260416\\models\\transformer_10000.pt",
+      "active_agent_count": 1
+    },
+    {
+      "reward_mean": 72.01624759038289,
+      "reward_std": 0.0,
+      "p2p_mean": 0.5078251916853922,
+      "p2p_std": 0.0,
+      "grid_buy_mean": 2.7150581811125463,
+      "grid_buy_std": 0.0,
+      "grid_sell_mean": 0.49781539282785614,
+      "grid_sell_std": 0.0,
+      "carbon_mean": 1.981612552291448,
+      "carbon_std": 0.0,
+      "n_agents_mean": 2.0,
+      "n_eval_episodes": 1,
+      "run_dir": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\full_multiseed10000_rerun_seed42_20260416",
+      "label": "Seed42",
+      "checkpoint_episode": 10000,
+      "checkpoint_path": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\runs\\full_multiseed10000_rerun_seed42_20260416\\models\\transformer_10000.pt",
+      "active_agent_count": 2
+    }
+  ],
+  "aggregate": [
+    {
+      "active_agent_count": 1,
+      "reward_mean": 37.16862085958322,
+      "reward_std": 0.0,
+      "p2p_mean": 0.0,
+      "p2p_std": 0.0,
+      "grid_buy_mean": 1.7810652150110589,
+      "grid_buy_std": 0.0,
+      "grid_sell_mean": 1.5621304266478495,
+      "grid_sell_std": 0.0,
+      "carbon_mean": 1.3677301253333958,
+      "carbon_std": 0.0,
+      "n_agents_mean": 1.0,
+      "n_agents_std": 0.0
+    },
+    {
+      "active_agent_count": 2,
+      "reward_mean": 72.01624759038289,
+      "reward_std": 0.0,
+      "p2p_mean": 0.5078251916853922,
+      "p2p_std": 0.0,
+      "grid_buy_mean": 2.7150581811125463,
+      "grid_buy_std": 0.0,
+      "grid_sell_mean": 0.49781539282785614,
+      "grid_sell_std": 0.0,
+      "carbon_mean": 1.981612552291448,
+      "carbon_std": 0.0,
+      "n_agents_mean": 2.0,
+      "n_agents_std": 0.0
+    }
+  ]
+}

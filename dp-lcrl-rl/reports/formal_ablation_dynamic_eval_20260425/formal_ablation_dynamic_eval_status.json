@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "total_rows": 48,
+  "completed_rows": 48,
+  "failed_rows": 0,
+  "active": null,
+  "failures": [],
+  "output_dir": "C:\\Users\\23034\\Desktop\\论文\\面向节点动态变化的P2P低碳能源安全最优交易机制研究\\code2\\on-policy-main\\dp-lcrl-rl\\reports\\formal_ablation_dynamic_eval_20260425",
+  "updated_at": "2026-04-25 18:21:22"
+}

@@ -1,0 +1,12 @@
+Method               Scale Reward      Scale P2P        Scale Grid       Scale Carbon     Dynamic Reward    Noise Sens.  Mask Score
+-------------------  ----------------  ---------------  ---------------  ---------------  ----------------  -----------  ----------
+Full / Ours          92.344 +/- 3.108  0.196 +/- 0.051  2.982 +/- 0.094  1.660 +/- 0.052  93.701 +/- 0.619  0.021        1.000     
+w/o Structured Mask  92.793 +/- 1.621  0.156 +/- 0.040  3.028 +/- 0.078  1.651 +/- 0.050  92.978 +/- 0.563  0.752        0.000     
+
+Notes:
+Full / Ours = CMTM + structural mask + direct max-scale training.
+w/o Structured Mask = CMTM + obs-only padding + direct max-scale training.
+Scale metrics average the 1..30 fixed active-agent sweep after seed aggregation.
+Dynamic Reward averages variable-scale/churn scenarios.
+Noise Sens. is the absolute reward change under inactive-observation noise relative to the same churn test set; lower is better.
+Mask Score is a normalized average of inactive-action magnitude and inactive-noise sensitivity; higher is better.

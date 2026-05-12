@@ -1,0 +1,16 @@
+{
+  "A->B_quantity": 19.088572569191456,
+  "A->B_carbon": 0.0,
+  "A->B_weighted_intensity": 0.0,
+  "D->B_quantity": 17.937731839716434,
+  "D->B_carbon": 12.556412073967078,
+  "D->B_weighted_intensity": 0.699999988079071,
+  "B->C_quantity": 31.832982135355472,
+  "B->C_carbon": 10.62197970542603,
+  "B->C_weighted_intensity": 0.33367843641732425,
+  "b_storage_intensity_after_upstream": 0.33370074896058677,
+  "b_storage_intensity_during_downstream": 0.25027556172044,
+  "c_total_p2p_carbon_import": 10.62197970542603,
+  "c_total_load_carbon": 15.273733446608876,
+  "num_seeds": 3
+}

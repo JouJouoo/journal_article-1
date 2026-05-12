@@ -1,0 +1,9 @@
+{
+  "avg_seller0_label_full": 0.35808131616795436,
+  "std_seller0_label_full": 0.17922702622758735,
+  "avg_seller1_label_full": 0.699999988079071,
+  "std_seller1_label_full": 0.0,
+  "total_buyer_p2p_import_full": 4.016535423090964,
+  "total_buyer_load_carbon_full": 56.59629159880703,
+  "num_steps": 16
+}

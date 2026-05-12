@@ -1,0 +1,10 @@
+{
+  "num_seeds": 3,
+  "pre_freeze_carbon_mass": 8.392597475444939,
+  "during_freeze_carbon_mass": 8.39259747544494,
+  "post_freeze_carbon_mass": 6.624176416937061,
+  "pre_freeze_storage_intensity": 0.6999999918952223,
+  "post_freeze_storage_intensity": 0.6999999918952223,
+  "freeze_std": 1.8724445165742407e-15,
+  "freeze_preserved": true
+}
